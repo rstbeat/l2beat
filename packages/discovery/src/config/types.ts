@@ -15,6 +15,7 @@ export interface DiscoveryModuleConfig {
   readonly chain: DiscoveryChainConfig
   readonly dryRun?: boolean
   readonly dev?: boolean
+  readonly printStats?: boolean
   readonly blockNumber?: number
   readonly sourcesFolder?: string
   readonly flatSourcesFolder?: string
@@ -30,7 +31,6 @@ export interface DiscoveryChainConfig {
   name: string
   rpcUrl: string
   eventRpcUrl?: string
-  rpcGetLogsMaxRange?: number
   reorgSafeDepth?: number
   multicall: MulticallConfig
   etherscanApiKey: string
