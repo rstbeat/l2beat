@@ -17,7 +17,7 @@ export function TvlHeader({ isBridge }: TvlHeaderProps) {
         <p className="hidden text-gray-500 md:block dark:text-gray-600">
           {isBridge
             ? 'Sum of all funds locked on Ethereum converted to '
-            : 'Sum of all canonically bridged, externally bridged, and natively minted tokens, converted to '}
+            : 'Sum of all restaked ETHconverted to '}
           <span data-role="chart-header-currency">...</span>
         </p>
       </div>
