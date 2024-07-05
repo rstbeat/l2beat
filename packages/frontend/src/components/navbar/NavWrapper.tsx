@@ -315,7 +315,7 @@ export function Sidenav({
         >
           <div className="flex flex-row items-center justify-between">
             <a href={getMainLink(path, links)}>
-              {/* <Logo className="block h-8 w-auto" /> */}
+              <Logo className="overflow-visible h-8 w-auto" />
               <LogoSmall className="h-8 w-auto xl:sidenav-collapsed:block" />
             </a>
             <div className="flex flex-row items-center gap-4 xl:sidenav-collapsed:hidden">

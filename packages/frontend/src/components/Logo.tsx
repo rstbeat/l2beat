@@ -17,6 +17,8 @@ export function Logo({ className, animated = true }: Props): any {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      role="img"
+      aria-label="L2BEAT logo"
     >
       <rect width="265.139" height="68" fill="url(#pattern0_2314_326)" />
       <defs>
