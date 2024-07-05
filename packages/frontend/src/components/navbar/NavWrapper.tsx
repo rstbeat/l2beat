@@ -218,7 +218,7 @@ function MobileNavBar({ links }: { links: NavbarLinkGroups }) {
         <div className="flex flex-row gap-4">
           <div className="py-4">
             <a href={getMainLink(path, links)}>
-              <Logo className="h-8 w-auto" />
+              <Logo className="overflow-visible h-8 w-auto" />
             </a>
           </div>
           <ul className="flex flex-row">
@@ -315,8 +315,8 @@ export function Sidenav({
         >
           <div className="flex flex-row items-center justify-between">
             <a href={getMainLink(path, links)}>
-              <Logo className="block h-8 w-auto" />
-              {/* <LogoSmall className="hidden h-8 w-auto xl:sidenav-collapsed:block" /> */}
+              {/* <Logo className="block h-8 w-auto" /> */}
+              <LogoSmall className="h-8 w-auto xl:sidenav-collapsed:block" />
             </a>
             <div className="flex flex-row items-center gap-4 xl:sidenav-collapsed:hidden">
               <DarkThemeToggle />
@@ -325,7 +325,6 @@ export function Sidenav({
               </button>
             </div>
           </div>
-          La vaca lechera
           <nav className="flex flex-1 flex-col gap-6">
             {/* {links.map((group) => (
               <NavLinkGroup key={group.title} title={group.title}>

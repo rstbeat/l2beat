@@ -5,7 +5,6 @@ import { Footer } from '../components'
 import { About } from '../components/About'
 import { PageContent } from '../components/PageContent'
 import { NavWrapper } from '../components/navbar/NavWrapper'
-import { OtherSites } from '../components/other-sites/OtherSites'
 import { cn } from '../utils/cn'
 
 export interface DashboardLayoutProps {
@@ -35,7 +34,6 @@ export function DashboardLayout(props: DashboardLayoutProps) {
           {props.children}
           {scalingOrBridges && (
             <>
-              <OtherSites />
               <About />
             </>
           )}

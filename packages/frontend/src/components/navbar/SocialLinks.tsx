@@ -16,32 +16,32 @@ export function SocialLinks() {
   return (
     <>
       <li>
-        <PlainLink href={config.links.twitter} title="Twitter">
+        <PlainLink href={'/'} title="Twitter">
           <XIcon />
         </PlainLink>
       </li>
       <li>
-        <PlainLink href={config.links.discord} title="Discord">
+        <PlainLink href={'/'} title="Discord">
           <DiscordIcon />
         </PlainLink>
       </li>
       <li>
-        <PlainLink href={config.links.github} title="Github">
+        <PlainLink href={'/'} title="Github">
           <GithubIcon />
         </PlainLink>
       </li>
       <li>
-        <PlainLink href={config.links.linkedin} title="LinkedIn">
+        <PlainLink href={'/'} title="LinkedIn">
           <LinkedInIcon />
         </PlainLink>
       </li>
       <li>
-        <PlainLink href={config.links.youTube} title="YouTube">
+        <PlainLink href={'/'} title="YouTube">
           <YouTubeIcon />
         </PlainLink>
       </li>
       <li>
-        <PlainLink href={config.links.medium} title="Medium">
+        <PlainLink href={'/'} title="Medium">
           <MediumIcon />
         </PlainLink>
       </li>

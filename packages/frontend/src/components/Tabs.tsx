@@ -1,20 +1,20 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
-import { cn } from '../utils/cn'
-import { HorizontalSeparator } from './HorizontalSeparator'
-import { OverflowWrapper } from './OverflowWrapper'
+import { cn } from "../utils/cn";
+import { HorizontalSeparator } from "./HorizontalSeparator";
+import { OverflowWrapper } from "./OverflowWrapper";
 
 interface TabsProps {
-  items: Tab[]
+  items: Tab[];
 }
 
 interface Tab {
-  id: string
-  name: string
-  content: ReactNode
-  icon?: ReactNode
-  itemsCount?: number
-  shortName?: string
+  id: string;
+  name: string;
+  content: ReactNode;
+  icon?: ReactNode;
+  itemsCount?: number;
+  shortName?: string;
 }
 
 export function Tabs({ items }: TabsProps) {
@@ -56,9 +56,9 @@ export function Tabs({ items }: TabsProps) {
         />
       </OverflowWrapper>
       <HorizontalSeparator className="mb-3 md:mb-6" />
-      {items.map((tab, i) => (
+      {items.slice(0,3).map((tab, i) => (
         <div
-          className={cn(i !== 0 && 'hidden')}
+          className={cn(i !== 0 && "hidden")}
           data-role="tabs-content"
           id={tab.id}
           key={tab.id}
@@ -67,5 +67,5 @@ export function Tabs({ items }: TabsProps) {
         </div>
       ))}
     </div>
-  )
+  );
 }
