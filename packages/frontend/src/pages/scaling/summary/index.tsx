@@ -9,7 +9,7 @@ import { ScalingSummaryPage } from './view/ScalingSummaryPage'
 export function getSummaryPage(config: Config, pagesData: PagesData) {
   const { props, wrapper } = getProps(config, pagesData)
   return {
-    slug: '/scaling/summary',
+    slug: '/summary',
     page: (
       <PageWrapper {...wrapper}>
         <ScalingSummaryPage {...props} />

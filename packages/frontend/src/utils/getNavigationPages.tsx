@@ -41,7 +41,7 @@ export function getScalingNavigationPages(
       fullTitle: 'Summary',
       shortTitle: 'Summary',
       icon: SummaryIcon,
-      link: '/scaling/summary',
+      link: '/summary',
       selected: selectedPage === 'summary',
     },
     {

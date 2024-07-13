@@ -224,7 +224,7 @@ function MobileNavBar({ links }: { links: NavbarLinkGroups }) {
           <ul className="flex flex-row">
             <MobileNavBarLink
               title="Scaling"
-              href="/scaling/summary"
+              href="/summary"
               activeBehavior={(path) => path.startsWith("/scaling")}
             />
             <MobileNavBarLink
@@ -463,7 +463,7 @@ export function NavWrapper({
         {
           title: "Summary",
           icon: SummaryIcon,
-          href: "/scaling/summary",
+          href: "/summary",
           enabled: true,
         },
         {

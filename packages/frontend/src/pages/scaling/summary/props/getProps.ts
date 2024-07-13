@@ -23,7 +23,7 @@ export function getProps(
       preloadApis: [getChartUrl({ type: 'scaling-tvl' })],
       metadata: getDefaultPageMetadata({
         image: 'https://l2beat.com/meta-images/pages/og-scaling-summary.png',
-        url: 'https://l2beat.com/scaling/summary',
+        url: 'https://l2beat.com/summary',
       }),
       banner: config.features.banner,
     },
