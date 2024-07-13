@@ -59,7 +59,7 @@ async function main() {
       finalityApiResponse,
       implementationChange,
       l2CostsApiResponse,
-      verifiersApiResponse,
+      // verifiersApiResponse,
     ] = await Promise.all([
       fetchTvlApi(config.backend, http, { tvl: config.features.tvl }),
       fetchTvlApi(config.backend, http, {
@@ -84,9 +84,9 @@ async function main() {
       config.features.costsPage
         ? fetchL2CostsApi(config.backend, http)
         : undefined,
-      config.features.zkCatalog
-        ? fetchVerifiersApi(config.backend, http)
-        : undefined,
+      // config.features.zkCatalog
+      //   ? fetchVerifiersApi(config.backend, http)
+      //   : undefined,
     ])
     const supportedChains = getChainNames(config)
     const verificationStatus = getVerificationStatus(supportedChains)
@@ -118,7 +118,7 @@ async function main() {
       finalityApiResponse,
       l2CostsApiResponse,
       implementationChange,
-      verifiersApiResponse,
+      // verifiersApiResponse,
     }
     renderPages(config, pagesData)
     console.timeEnd('[BUILDING PAGES]')

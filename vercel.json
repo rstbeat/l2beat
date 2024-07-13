@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/scaling/summary",
+      "destination": "/summary",
       "permanent": false
     }
   ],

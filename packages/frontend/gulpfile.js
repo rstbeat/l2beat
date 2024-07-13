@@ -59,7 +59,7 @@ function serve() {
   const app = express()
   app.use(express.static('build'))
   app.get('/', (_req, res) => {
-    res.redirect('/scaling/summary')
+    res.redirect('/summary')
   })
 
   const deploymentEnvironment = process.env.DEPLOYMENT_ENV || 'ci'

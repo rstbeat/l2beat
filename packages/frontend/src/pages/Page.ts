@@ -45,5 +45,5 @@ export interface PagesData {
   finalityApiResponse: FinalityApiResponse | undefined
   l2CostsApiResponse: L2CostsApiResponse | undefined
   implementationChange: ImplementationChangeReportApiResponse | undefined
-  verifiersApiResponse: VerifiersApiResponse | undefined
+  verifiersApiResponse?: VerifiersApiResponse | undefined
 }
