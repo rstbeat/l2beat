@@ -48,6 +48,8 @@ export function ProjectSummary(props: Props) {
                 className="col-span-full mt-2 hidden md:my-0 md:block"
               />
             )}
+            La vaca mariposa
+            
             {group.map((stat) => {
               return (
                 <DetailsHeaderStat

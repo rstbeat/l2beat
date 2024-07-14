@@ -222,7 +222,7 @@ function MobileNavBar({ links }: { links: NavbarLinkGroups }) {
             </a>
           </div>
           <ul className="flex flex-row">
-            <MobileNavBarLink
+            {/* <MobileNavBarLink
               title="Scaling"
               href="/summary"
               activeBehavior={(path) => path.startsWith("/scaling")}
@@ -231,7 +231,7 @@ function MobileNavBar({ links }: { links: NavbarLinkGroups }) {
               title="Bridges"
               href="/bridges/summary"
               activeBehavior={(path) => path.startsWith("/bridges")}
-            />
+            /> */}
           </ul>
         </div>
         {/* Right side */}
@@ -411,33 +411,33 @@ function LegacyNavBar({ links }: { links: NavbarLinkGroups }) {
               <Logo className="h-8 w-auto" />
             </a>
           </li>
-          {links.map((group) => (
+          {/* {links.map((group) => (
             <LegacyNavBarLink
               key={group.title}
               large
               href={group.links[0].href}
               title={group.title}
             />
-          ))}
+          ))} */}
         </ul>
         <div className="flex h-full items-center gap-5">
-          <ul className="hidden items-center gap-4 2xl:flex">
+          {/* <ul className="hidden items-center gap-4 2xl:flex">
             <SocialLinks />
-          </ul>
+          </ul> */}
           <div className="hidden h-8 w-px bg-gray-300 2xl:block dark:bg-gray-700" />
           <ul className="flex h-full items-center gap-1.5">
-            <LegacyNavBarLink title="Forum" href={config.links.forum} />
+            {/* <LegacyNavBarLink title="Forum" href={config.links.forum} />
             {config.features.zkCatalog && (
               <LegacyNavBarLink title="ZK Catalog" href="/zk-catalog" />
-            )}
+            )} */}
             <LegacyNavBarLink title="Donate" href={"/donate"} />
-            <LegacyNavBarLink title="Governance" href="/governance" />
+            {/* <LegacyNavBarLink title="Governance" href="/governance" />
             <LegacyNavBarLink title="Glossary" href="/glossary" />
             <LegacyNavBarLink href="https://l2beat.notion.site/We-are-hiring-Work-at-L2BEAT-e4e637265ae94c5db7dfa2de336b940f">
               Jobs
               {config.features.hiringBadge && <HiringBadge />}
             </LegacyNavBarLink>
-            <LegacyNavBarLink title="FAQ" href="/faq" />
+            <LegacyNavBarLink title="FAQ" href="/faq" /> */}
           </ul>
           <div className="h-8 w-px bg-gray-300 dark:bg-gray-700" />
           <DarkThemeToggle />
