@@ -20,7 +20,7 @@ export function ProjectSubPageHeader(props: ProjectSubPageHeaderProps) {
         alt={`${props.project.name} logo`}
       />
       <h1 className="font-medium text-base">
-        <a href={`/scaling/projects/${props.project.slug}`}>
+        <a href={`/projects/${props.project.slug}`}>
           {props.project.name}
         </a>
         <span className="mx-1 text-gray-550">/</span>

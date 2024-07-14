@@ -16,7 +16,7 @@ export function DashboardLayout(props: DashboardLayoutProps) {
 
   // Enable new layout for /scaling and /bridges pages, but not for detailed project pages
   const scalingOrBridges =
-    ['/scaling', '/bridges'].some((p) => path.startsWith(p)) &&
+    ['/', '/bridges'].some((p) => path.startsWith(p)) &&
     !path.includes('/projects')
 
   return (

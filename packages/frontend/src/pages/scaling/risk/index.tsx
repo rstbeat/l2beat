@@ -9,7 +9,7 @@ import { ScalingRiskPage } from './view/ScalingRiskPage'
 export function getRiskPage(config: Config, pagesData: ScalingRiskPagesData) {
   const { props, wrapper } = getProps(config, pagesData)
   return {
-    slug: '/scaling/risk',
+    slug: '/risk',
     page: (
       <PageWrapper {...wrapper}>
         <ScalingRiskPage {...props} />

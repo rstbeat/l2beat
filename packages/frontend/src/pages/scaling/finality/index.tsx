@@ -9,7 +9,7 @@ import { ScalingFinalityPage } from './view/ScalingFinalityPage'
 export function getFinalityPage(config: Config, pagesData: FinalityPagesData) {
   const { props, wrapper } = getProps(config, pagesData)
   return {
-    slug: '/scaling/finality',
+    slug: '/finality',
     page: (
       <PageWrapper {...wrapper}>
         <ScalingFinalityPage {...props} />

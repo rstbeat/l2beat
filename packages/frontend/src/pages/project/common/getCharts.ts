@@ -49,7 +49,7 @@ export function getCharts(
           tokens: getTokens(project.id, tvlApiResponse, isLayer2orLayer3),
           tvlBreakdownHref:
             isLayer2orLayer3 && !project.isUpcoming
-              ? `/scaling/projects/${project.display.slug}/tvl-breakdown`
+              ? `/projects/${project.display.slug}/tvl-breakdown`
               : undefined,
           milestones: project.milestones,
           showComingSoon: !hasTvl && !hasActivity,

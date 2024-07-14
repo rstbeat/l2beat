@@ -23,7 +23,7 @@ export function getProps(
       metadata: getDefaultPageMetadata({
         image:
           'https://l2beat.com/meta-images/pages/og-scaling-value-locked.png',
-        url: 'https://l2beat.com/scaling/tvl',
+        url: 'https://l2beat.com/tvl',
       }),
       banner: config.features.banner,
     },

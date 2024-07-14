@@ -16,7 +16,7 @@ export function getProps(
     wrapper: {
       metadata: getDefaultPageMetadata({
         image: 'https://l2beat.com/meta-images/pages/og-scaling-risks.png',
-        url: 'https://l2beat.com/scaling/risk',
+        url: 'https://l2beat.com/risk',
       }),
       banner: config.features.banner,
     },

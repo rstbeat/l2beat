@@ -26,7 +26,7 @@ export function getProjectTvlBreakdownPages(
   return included.map((project) => {
     const { wrapper, props } = getProps(project, config, pagesData)
     return {
-      slug: `/scaling/projects/${project.display.slug}/tvl-breakdown`,
+      slug: `/projects/${project.display.slug}/tvl-breakdown`,
       page: (
         <PageWrapper {...wrapper}>
           <ProjectTvlBreakdownPage {...props} />

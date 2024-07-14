@@ -11,7 +11,7 @@ export function getL3sProjectPages(config: Config, pagesData: PagesData) {
     const { wrapper, props } = getProps(project, config, pagesData)
 
     return {
-      slug: `/scaling/projects/${project.display.slug}`,
+      slug: `/projects/${project.display.slug}`,
       page: (
         <PageWrapper {...wrapper}>
           <ProjectPage {...props} />

@@ -12,7 +12,7 @@ interface BridgeTableEntry {
 export function getBridgesRowProps(entry: BridgeTableEntry) {
   const href =
     entry.type === 'layer2'
-      ? `/scaling/projects/${entry.slug}`
+      ? `/projects/${entry.slug}`
       : `/bridges/projects/${entry.slug}`
   const rowType = getRowType(entry)
   return {

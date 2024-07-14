@@ -9,7 +9,7 @@ export function getLivenessPage(config: Config, pagesData: LivenessPagesData) {
   const { props, wrapper } = getProps(config, pagesData)
 
   return {
-    slug: '/scaling/liveness',
+    slug: '/liveness',
     page: (
       <PageWrapper {...wrapper}>
         <ScalingLivenessPage {...props} />

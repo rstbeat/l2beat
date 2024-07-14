@@ -9,7 +9,7 @@ import { ActivityPage } from './view/ScalingActivityPage'
 export function getActivityPage(config: Config, pagesData: ActivityPagesData) {
   const { props, wrapper } = getProps(config, pagesData)
   return {
-    slug: '/scaling/activity',
+    slug: '/activity',
     page: (
       <PageWrapper {...wrapper}>
         <ActivityPage {...props} />

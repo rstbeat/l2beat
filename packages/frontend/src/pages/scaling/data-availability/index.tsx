@@ -12,7 +12,7 @@ export function getScalingDataAvailabilityPage(
 ) {
   const { props, wrapper } = getProps(config, pagesData)
   return {
-    slug: '/scaling/data-availability',
+    slug: '/data-availability',
     page: (
       <PageWrapper {...wrapper}>
         <ScalingDataAvailabilityPage {...props} />

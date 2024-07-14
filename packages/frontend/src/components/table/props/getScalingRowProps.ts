@@ -44,7 +44,7 @@ function getHref(slug: ScalingTableEntry['slug'], type: ScalingRowType) {
     return undefined
   }
 
-  const base = `/scaling/projects/${slug}`
+  const base = `/projects/${slug}`
   switch (type) {
     case 'summary':
     case 'liveness':
